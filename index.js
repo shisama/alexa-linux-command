@@ -41,7 +41,7 @@ const handlers = {
   'Command': function () {
     const factArr = data;
     const factIndex = Math.floor(Math.random() * factArr.length);
-    const randomFact = factArr[0];
+    const randomFact = factArr[factIndex];
     const {name, explanation, pronunciation} = randomFact;
     const command = pronunciation || name;
     const speechOutput = `${command}について説明します。${command}は${explanation}`;
